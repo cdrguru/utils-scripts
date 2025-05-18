@@ -1,24 +1,15 @@
-import os
-import shutil
-import sys
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
 
-def main():
-    if len(sys.argv) < 2:
-        print("Usage: delete-venvs <directory>")
-        sys.exit(1)
+[project]
+name = "utils-scripts"
+version = "0.1.0"
+description = "Collection of reusable utility scripts"
+authors = [
+  { name = "Paul Davis", email = "pdavis@askbigplay.com" }
+]
+dependencies = []
 
-    base_dir = sys.argv[1]
-
-    if not os.path.isdir(base_dir):
-        print(f"{base_dir} is not a valid directory.")
-        sys.exit(1)
-
-    for root, dirs, files in os.walk(base_dir):
-        if 'venv' in dirs:
-            venv_path = os.path.join(root, 'venv')
-            print(f"Deleting virtual environment at {venv_path}")
-            shutil.rmtree(venv_path)
-
-if __name__ == "__main__":
-    main()
-
+[project.scripts]
+delete-venvs = "utils_scripts.delete_virtual_envs:main"

@@ -1,0 +1,2 @@
+[console_scripts]
+delete-venvs = utils_scripts.delete_virtual_envs:main

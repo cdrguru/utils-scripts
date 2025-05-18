@@ -1,0 +1,8 @@
+pyproject.toml
+src/utils_scripts/delete_virtual_envs.py
+src/utils_scripts/findvirtualenviornments.py
+src/utils_scripts.egg-info/PKG-INFO
+src/utils_scripts.egg-info/SOURCES.txt
+src/utils_scripts.egg-info/dependency_links.txt
+src/utils_scripts.egg-info/entry_points.txt
+src/utils_scripts.egg-info/top_level.txt
