@@ -7,7 +7,7 @@ name = "utils-scripts"
 version = "0.1.0"
 description = "Collection of reusable utility scripts"
 authors = [
-  { name = "Paul Davis", email = "pdavis@askbigplay.com" }
+  { name = "Paul Davis" }
 ]
 dependencies = []
 
